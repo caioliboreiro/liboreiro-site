@@ -1,0 +1,38 @@
+footer {
+  padding: 10px 50px;
+  background-color: black;
+  color: white;
+}
+
+small {
+  font-size: 1rem;
+}
+
+.company-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .company-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  height: 50px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}

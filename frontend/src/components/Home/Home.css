@@ -1,0 +1,132 @@
+.home-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    url("../../assets/entrepeneur.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.phrases {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-phrase,
+.other-phrase,
+.quotes > h1,
+.quotes h2 {
+  color: white;
+}
+
+.phrases-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-phrase {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .main-phrase {
+    font-size: 2.25rem;
+  }
+}
+
+.main-phrase::selection,
+.other-phrase::selection,
+.quotes h2::selection,
+.quotes > h1::selection {
+  color: black;
+  background-color: lightgray;
+}
+
+.other-phrase {
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.quotes {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 100px;
+  padding-bottom: 50px;
+}
+
+.quotes > h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.quote-containers {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .quote-containers {
+    flex-direction: column;
+  }
+}
+
+.quote-containers img {
+  width: 400px;
+}
+
+.quote {
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Roboto";
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.performance-section {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.performance-section h1 {
+  color: black;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.performance-section h1::selection {
+  color: white;
+  background-color: black;
+}
+
+.performance-section div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+  background-color: white;
+}

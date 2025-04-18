@@ -1,0 +1,146 @@
+.about {
+  background-color: white;
+}
+
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("../../assets/edificio.jpeg") no-repeat;
+  height: 65vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  margin: 0 auto;
+  width: 80%;
+  min-width: 400px;
+  flex-grow: 1;
+  display: flex;
+  gap: auto;
+  color: white;
+}
+
+@media screen and (max-width: 870px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.about-header {
+  margin-top: 40px;
+  font-size: 4rem;
+}
+
+.hero-content > * {
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.hero-content p {
+  margin: 0px 10px 100px 10px;
+}
+
+.about-desc-container {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+.table-of-contents {
+  background-color: black;
+  margin: 40px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  min-width: 400px;
+  margin: 40px auto 0 auto;
+
+  padding: 20px 50px;
+}
+
+.table-of-contents a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.5s;
+}
+
+.table-of-contents a:hover {
+  color: #ffb300;
+}
+
+.table-of-contents a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.table-of-contents a:hover::after {
+  width: 100%;
+}
+
+.contents {
+  font-size: 1rem;
+  list-style: none;
+}
+
+.text-section {
+  color: black;
+  padding: 0 10%;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.text-section p::selection,
+.text-section h1::selection,
+.text-section h2::selection {
+  color: white;
+  background-color: black;
+}
+
+.text-section h1 {
+  font-family: Times, serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.text-section h1,
+.text-section h2 {
+  font-family: Times, serif;
+}
+
+.text-section h1 {
+  margin-top: 150px;
+}
+
+.text-section img {
+  width: 100%;
+  max-width: 600px;
+  object-fit: contain;
+}
+
+.img-paragraph {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .img-paragraph {
+    flex-direction: column;
+  }
+}

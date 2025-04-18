@@ -1,0 +1,92 @@
+.funds-section {
+  color: black;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.funds-header {
+  font-size: 2.5rem;
+  font-family: Times, "Times New Roman", serif;
+  font-weight: 500;
+}
+
+.fund-list {
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+
+.fund-cat-header {
+  font-size: 1.1rem;
+  font-size: 800;
+}
+
+.fund-list > a {
+  text-decoration: none;
+  color: black;
+}
+
+.fund-list li {
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 7px;
+  list-style-type: none;
+  background-color: hsla(42, 100%, 80%, 0.25);
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forward-btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 80%;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .cta-container {
+    flex-direction: column;
+  }
+}
+
+.cta-header {
+  font-weight: 500;
+  color: white;
+}
+
+.msg-btn-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cta-btn {
+  padding: 20px 30px;
+  font-size: 1rem;
+  background-color: #ffb300;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cta-msg {
+  font-weight: bold;
+  color: white;
+}
+
+.cta-btn:hover {
+  background-color: hsl(42, 100%, 60%);
+}

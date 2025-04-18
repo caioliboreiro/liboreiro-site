@@ -1,0 +1,36 @@
+.card {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url("../../assets/stocks.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 220px;
+}
+
+.headers-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.primary-header,
+.secondary-header {
+  margin: 0;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.primary-header {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.secondary-header {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .secondary-header {
+    font-size: 2rem;
+  }
+}
